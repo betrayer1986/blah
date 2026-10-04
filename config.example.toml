@@ -1,0 +1,15 @@
+[imap]
+host = "imap.example.com"
+port = 993
+user = "me@example.com"
+password_env = "IMAP_PASSWORD"   # Passwort aus Umgebungsvariable lesen
+folder = "INBOX"
+poll_interval = 60               # Sekunden zwischen Abfragen
+# Optional: erfolgreich verarbeitete Mails in diesen Ordner verschieben
+# processed_folder = "INBOX/Termine"
+
+[nextcloud]
+# Kalender-URL: Nextcloud -> Kalender -> Einstellungen (Drei-Punkte-Menü) -> "Link kopieren"
+calendar_url = "https://cloud.example.com/remote.php/dav/calendars/USER/personal/"
+user = "USER"
+password_env = "NEXTCLOUD_APP_PASSWORD"   # App-Passwort verwenden!
